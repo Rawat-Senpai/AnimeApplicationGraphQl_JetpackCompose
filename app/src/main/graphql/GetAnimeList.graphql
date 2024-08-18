@@ -1,0 +1,12 @@
+query GetAnimeList {
+    Page {
+        media {
+            siteUrl
+            title {
+                english
+                native
+            }
+            description
+        }
+    }
+}
