@@ -23,15 +23,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.lifecycleScope
 import com.example.GetAnimeListQuery
 import com.example.animelistapplication2024.ui.theme.AnimeListApplication2024Theme
 import com.example.animelistapplication2024.utils.NetworkResult
 import dagger.hilt.android.AndroidEntryPoint
-import dagger.hilt.android.HiltAndroidApp
-import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -55,7 +51,6 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
-
     }
 
     @Composable
@@ -113,7 +108,6 @@ class MainActivity : ComponentActivity() {
             }
         }
 
-
     }
 
     @Composable
@@ -142,7 +136,6 @@ class MainActivity : ComponentActivity() {
                 Text(text = "URL: ${anime.siteUrl}", style = MaterialTheme.typography.bodyMedium)
             }
         }
-
 
     }
 
